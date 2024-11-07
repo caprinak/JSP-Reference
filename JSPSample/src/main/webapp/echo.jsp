@@ -2,22 +2,18 @@
 <HTML>
 <HEAD>
 <TITLE>Echo</TITLE>
+<!-- Servlet code generated is as follows
+
+•  String _jspx_qStr = "";: Initializes an empty query string.
+
+•  out.flush();: Flushes the output stream to ensure all previous content is sent to the client before including the CSS file.
+
+•  pageContext.include("style.css" + _jspx_qStr);: Includes the style.css file into the current JSP page, allowing the styles to be applied.
+
+This approach is useful for dynamically including resources and ensuring that the page is styled correctly.
+ -->
 <STYLE>
-<
-jsp
-:include
- 
-page
-="
-style
-.css
-"
- 
-flush
-="
-true
-"/
->
+< jsp :include  page =" style .css "   flush =" true "/ >
 </STYLE>
 </HEAD>
 <BODY>
