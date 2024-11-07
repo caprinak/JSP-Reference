@@ -1,0 +1,11 @@
+The JSP development environment provides a means for generating HTML pages
+dynamically with server-side Java programming. The syntax allows most of the
+HTML to be coded directly, with sections marked off for Java code that controls
+the page generation. There is support for including other resources, both static and
+dynamic. JavaBeans are fully integrated into the framework, and custom tags allow
+functionality to be encapsulated and made available to nonexpert page authors.
+The key point this chapter makes is this: a mental model of the JSP development
+cycle is crucial to understanding how to create and debug Web applications. Knowledge
+of what happens at translation time (static resources are included via the <%@ include
+%> directive, for example) versus request time (dynamic request dispatching with
+<jsp:include>) provides insight into which features to use and when to use them.
