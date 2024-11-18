@@ -10,6 +10,12 @@ Date getDate() {
     return theDate;
 }
 %>
-Hello! The time is now <%=getDate()%>
+Hello! The time is now <%=getDate() %>
+<br>
+Today is
+<%=
+new java.text.SimpleDateFormat("MMMM d, yyyy")
+.format(new java.util.Date())
+%>
 </body>
 </html>

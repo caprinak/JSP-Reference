@@ -33,6 +33,8 @@ This approach is useful for dynamically including resources and ensuring that th
 }
 %>
 	</TABLE>
+	The Java virtual machine vendor is
+	<em><%= System.getProperty("java.vm.vendor") %></em>
 </BODY>
 </HTML>
 <%!private String normalize(String value) {

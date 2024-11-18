@@ -7,7 +7,23 @@
 <title>Set cookie</title>
 </head>
 
+<%@ page import="java.io.*,java.util.*" %>
 
+<!--Unlike scriptlets and expressions, declarations have no access to the implicit objects.  The showSessionID() method is able to extract the JspWriter and HttpSession
+objects from the page context and use them to write to the current output stream. -->
+<%!
+public void showSessionID(PageContext pc)
+throws IOException
+{
+JspWriter out = pc.getOut();
+HttpSession session = pc.getSession();
+Date created = new Date(session.getCreationTime());
+out.println("The session was created at " + created);
+}
+%>
+<%
+showSessionID(pageContext);
+%>
 
 <%-- Define a method to print a table --%>
 <%!private static void printTable(Writer writer, Map map, String title) {
